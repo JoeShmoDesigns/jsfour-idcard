@@ -23,3 +23,41 @@ Citizen.CreateThread(function()
 		end
 	end
 end)
+
+-- LICENSE CARD
+RegisterNetEvent('esx_newitems:licensecard')
+AddEventHandler('esx_newitems:licensecard', function()
+	local player, distance = ESX.Game.GetClosestPlayer()
+
+if distance ~= -1 and distance <= 3.0 then
+  TriggerServerEvent('jsfour-idcard:open', GetPlayerServerId(PlayerId()), GetPlayerServerId(player), 'driver')
+else
+  ESX.ShowNotification('No players nearby')
+end
+end)
+
+
+-- ID CARD
+RegisterNetEvent('esx_newitems:idcard')
+AddEventHandler('esx_newitems:idcard', function()
+	local player, distance = ESX.Game.GetClosestPlayer()
+
+if distance ~= -1 and distance <= 3.0 then
+  TriggerServerEvent('jsfour-idcard:open', GetPlayerServerId(PlayerId()), GetPlayerServerId(player))
+else
+  ESX.ShowNotification('No players nearby')
+end
+end)
+
+
+-- WEAPON CARD
+RegisterNetEvent('esx_newitems:weaponcard')
+AddEventHandler('esx_newitems:weaponcard', function()
+	local player, distance = ESX.Game.GetClosestPlayer()
+
+if distance ~= -1 and distance <= 3.0 then
+   TriggerServerEvent('jsfour-idcard:open', GetPlayerServerId(PlayerId()), GetPlayerServerId(player), 'weapon')
+else
+   ESX.ShowNotification('No players nearby')
+end
+end)
