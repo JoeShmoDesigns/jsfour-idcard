@@ -43,3 +43,21 @@ AddEventHandler('jsfour-idcard:open', function(ID, targetID, type)
 		end
 	end)
 end)
+
+
+-- Create Card Items
+
+ESX.RegisterUsableItem('licensecard', function(source)
+	local xPlayer = ESX.GetPlayerFromId(source)
+	  TriggerClientEvent('esx_newitems:licensecard', source)
+end)
+
+ESX.RegisterUsableItem('weaponcard', function(source)
+	local xPlayer = ESX.GetPlayerFromId(source)
+	  TriggerClientEvent('esx_newitems:weaponcard', source)
+end)
+
+ESX.RegisterUsableItem('idcard', function(source)
+	local xPlayer = ESX.GetPlayerFromId(source)
+	  TriggerClientEvent('esx_newitems:idcard', source)
+end)
