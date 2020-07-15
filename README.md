@@ -1,5 +1,14 @@
 # jsfour-idcard
-This is an updated version of my <a href="https://github.com/jonassvensson4/jsfour-legitimation">jsfour-legitimation<a/>. It has and ID card, firearms license and a driver license
+
+Hey! This is my custom version of jsfour-idcard which creates each license as an item and allows you to show other players!
+
+Install like normal but be sure to add the following items to your database:
+- "idcard"
+- "weaponcard"
+- "licensecard"
+
+When in-game, simply drag to use and the nearest player will see your card!
+ENJOY!
 
 ## LICENSE
 Please don't sell or reupload this resource
@@ -9,6 +18,8 @@ Drag and drop.
 You also need to have <a href="https://github.com/ESX-Org/es_extended">es_extended</a> and <a href="https://github.com/ESX-Org/esx_license">esx_license</a> installed.
 
 You need to add a couple rows of code depending on how you want to use the ID. Please check the **Usage** down below.
+
+
 
 
 ## SCREENSHOTS
